@@ -1,0 +1,10 @@
+body {
+    background-color: snow;
+}
+.card {
+    max-width: 250px;
+}
+
+.card-columns {
+    margin: auto 15%;
+}
