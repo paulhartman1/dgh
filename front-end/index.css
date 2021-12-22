@@ -6,7 +6,7 @@
 --independence: #5f5b6bff; */
 body {
 
-background-color: #3d3b3cff;
+background-color: rgba(0, 0, 0);
 }
 
 .imgd {
@@ -17,8 +17,8 @@ background-color: #3d3b3cff;
     color:#7f7979ff;
 }
 img {
-    border: 5px solid #7f7979ff;
-    border: 5px solid rgba(26, 248, 248, 0.326);
+    border: 1px solid #000000ff;
+   
     border-radius: 4px;  
 }
 .art-sig {
@@ -33,6 +33,9 @@ img {
 .imgsml {
     width: 120px;
     margin: 5px 25px;
+    -webkit-box-reflect: below 0 -webkit-gradient( linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(.5, rgba(255, 255, 255, .3)), color-stop(1, rgba(255, 255, 255, .3)) );
+    max-width: inherit;
+    max-height: inherit;
 }
 
 .img-artist {
@@ -61,6 +64,10 @@ img {
 
 .imgrow {
    text-align: center;
+}
+
+.imgrow-lower {
+    bottom: 400px;
 }
 
 .jumbotron {
