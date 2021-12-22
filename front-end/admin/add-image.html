@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Image</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="./add-image.css">
+    <script src="./add-image.js"></script>
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading"><strong>Upload Files</strong> <small>Bootstrap files upload</small></div>
+            <div class="panel-body">
+
+                <div id="drop-area">
+                    <form class="my-form">
+                      <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
+                      <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                      <label class="button" for="fileElem">Select some files</label>
+                    </form>
+                    <progress id="progress-bar" max=100 value=0></progress>
+                    <div id="gallery" /></div>
+                  </div>
+             
+            </div>
+        </div>
+    </div> <!-- /container -->
+</body>
+
+</html>
