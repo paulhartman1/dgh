@@ -1,0 +1,83 @@
+/* CSS HEX */
+/* --jet: #323031ff;
+--jet-2: #3d3b3cff;
+--sonic-silver: #7f7979ff;
+--pale-silver: #c1bdb3ff;
+--independence: #5f5b6bff; */
+body {
+
+background-color: rgba(0, 0, 0);
+}
+
+.imgd {
+    display: inline-block;
+
+}
+.nav-link {
+    color:#7f7979ff;
+}
+img {
+    border: 1px solid #000000ff;
+   
+    border-radius: 4px;  
+}
+.art-sig {
+    position: absolute;
+    height: 210px;
+    border: none;
+    right: 0;
+    margin: 0;
+    background-color: transparent;
+    top: -71px;
+}
+.imgsml {
+    width: 120px;
+    margin: 5px 25px;
+    -webkit-box-reflect: below 0 -webkit-gradient( linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(.5, rgba(255, 255, 255, .3)), color-stop(1, rgba(255, 255, 255, .3)) );
+    max-width: inherit;
+    max-height: inherit;
+}
+
+.img-artist {
+     
+
+    top: 20px;
+    position: absolute;
+    left: 75px;
+    height: 200px;
+}
+
+.left-chev {
+    color: #7f7979ff;
+    font-size: 2em;
+    padding-right: 50px;
+}
+.right-chev {
+    color: #7f7979ff;
+    font-size: 2em;
+    padding-left: 50px;
+}
+
+.imglrg {
+    max-width: 500px;
+}
+
+.imgrow {
+   text-align: center;
+}
+
+.imgrow-lower {
+    bottom: 400px;
+}
+
+.jumbotron {
+    background-color: rgb(15, 15, 15);
+    min-height: 300px;
+}
+
+.card-columns {
+    width: 20rem;
+    background-color: snow;
+    margin: 10px;
+   padding: 20px;
+}
