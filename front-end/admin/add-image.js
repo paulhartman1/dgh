@@ -16,7 +16,7 @@ $(document).ready(function () {
         })
         .on('dragleave', function (e) {
             preventDefaults(e);
-            unhighlight(e);
+            unhighlight(e); 
         })
 
     function preventDefaults(e) {
