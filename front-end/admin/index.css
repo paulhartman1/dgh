@@ -1,0 +1,10 @@
+.img-thumbnai {
+    max-height: 100px;
+}
+
+.date-picker {
+    border: 1px lightgrey solid;
+    padding: .5em;
+    border-radius: .5em;
+    color: slategray;
+}
