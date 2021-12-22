@@ -4,6 +4,6 @@
     });
 
     function go() {
-        window.location.href = "./admin"
+        window.location.href = "./admin/manage.html"
     }
 
