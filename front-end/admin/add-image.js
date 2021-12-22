@@ -1,38 +1,47 @@
-+ function($) {
-    'use strict';
+$(document).ready(function () {
 
-    // UPLOAD CLASS DEFINITION
-    // ======================
-
-    var dropZone = document.getElementById('drop-zone');
-    var uploadForm = document.getElementById('upload-form');
-
-    var startUpload = function(files) {
-        console.log(files)
-    }
-
-    uploadForm.addEventListener('submit', function(e) {
-        var uploadFiles = document.getElementById('upload-files').files;
-        e.preventDefault()
-
-        startUpload(uploadFiles)
+    
+    $('#drop-area')
+    .on('dragover', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        highlight(e);
+      
     })
-
-    dropZone.ondrop = function(e) {
+    .on('drop', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        unhighlight(e);
+        if(e.originalEvent.dataTransfer.files) {
+            handleFiles(e.originalEvent.dataTransfer.files);
+        }
+        console.log(e.target);
+    })
+    function submit(e) {
         e.preventDefault();
         this.className = 'upload-drop-zone';
 
         startUpload(e.dataTransfer.files)
     }
 
-    dropZone.ondragover = function() {
+
+    function ondrag(e) {
+        alert("SF)");
         this.className = 'upload-drop-zone drop';
         return false;
     }
 
-    dropZone.ondragleave = function() {
-        this.className = 'upload-drop-zone';
-        return false;
-    }
+    function highlight(e) {
+        $('#drop-area').addClass('highlight')
+      }
+      
+      function unhighlight(e) {
+        $('#drop-area').removeClass('highlight')
+      }
 
-}(jQuery);
+      function handleFiles(files) {
+        ([...files]).forEach(uploadFile)
+      }
+      
+
+})
