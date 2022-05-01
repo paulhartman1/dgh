@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3dghstorage6e8b5fbb",
+  "bucketName": "dgh-storage-6e8b5fbb",
+  "policyUUID": "70bb9126",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-dgh-staging-153419-authRole",
+      "UnauthRoleArn": "arn:aws:iam::507739703982:role/amplify-dgh-staging-153419-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::507739703982:role/amplify-dgh-staging-153419-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-dgh-staging-153419-deployment",
+      "UnauthRoleName": "amplify-dgh-staging-153419-unauthRole",
+      "StackName": "amplify-dgh-staging-153419",
+      "StackId": "arn:aws:cloudformation:us-east-1:507739703982:stack/amplify-dgh-staging-153419/2b429860-c964-11ec-8175-127c4bb0201d",
+      "AmplifyAppId": "d16z39zic64l5h"
+    },
+    "categories": {
+      "auth": {
+        "dgh": {}
+      }
+    }
+  }
+}
