@@ -1,0 +1,18 @@
+type Art @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  category: ID
+  ArtCategory: ArtCategory @hasOne
+  url: AWSURL
+  length: Float
+  width: Float
+  price: Float
+  date_create: AWSDate
+  date_sold: AWSDate
+  description: String
+}
+
+type ArtCategory @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  description: String
+}
+ 
