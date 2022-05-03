@@ -1,83 +1,53 @@
-/* CSS HEX */
-/* --jet: #323031ff;
---jet-2: #3d3b3cff;
---sonic-silver: #7f7979ff;
---pale-silver: #c1bdb3ff;
---independence: #5f5b6bff; */
 body {
-
-background-color: rgba(0, 0, 0);
+  margin: auto;
+  background-color: whitesmoke;
 }
 
-.imgd {
-    display: inline-block;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column {
+    flex: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
 
-}
-.nav-link {
-    color:#7f7979ff;
-}
-img {
-    border: 1px solid #000000ff;
+  .nav {
    
-    border-radius: 4px;  
-}
-.art-sig {
-    position: absolute;
-    height: 210px;
-    border: none;
-    right: 0;
-    margin: 0;
-    background-color: transparent;
-    top: -71px;
-}
-.imgsml {
-    width: 120px;
-    margin: 5px 25px;
-    -webkit-box-reflect: below 0 -webkit-gradient( linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(.5, rgba(255, 255, 255, .3)), color-stop(1, rgba(255, 255, 255, .3)) );
-    max-width: inherit;
-    max-height: inherit;
-}
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
+    opacity: 95%;
+    font-size: 20px;
+    height: 75px;
+  }
 
-.img-artist {
-     
-
-    top: 20px;
-    position: absolute;
-    left: 75px;
-    height: 200px;
-}
-
-.left-chev {
-    color: #7f7979ff;
-    font-size: 2em;
-    padding-right: 50px;
-}
-.right-chev {
-    color: #7f7979ff;
-    font-size: 2em;
-    padding-left: 50px;
-}
-
-.imglrg {
-    max-width: 500px;
-}
-
-.imgrow {
-   text-align: center;
-}
-
-.imgrow-lower {
-    bottom: 400px;
-}
-
-.jumbotron {
-    background-color: rgb(15, 15, 15);
-    min-height: 300px;
-}
-
-.card-columns {
-    width: 20rem;
-    background-color: snow;
-    margin: 10px;
-   padding: 20px;
-}
+  .nav img {
+    position: relative;
+    top: -137px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
